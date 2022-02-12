@@ -1,0 +1,199 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav::before {
+    content: "";
+    background-color: rgb(58, 58, 57);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+nav {
+    position: relative;
+}
+
+nav div {
+    display: flex;
+    position: relative;
+}
+
+nav div li {
+    list-style: none;
+    padding: 30px 30px 30px 30px;
+}
+
+nav div ul {
+    display: flex;
+}
+
+nav div li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav div li a:hover {
+    color: black;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 30px
+}
+
+
+/* home content */
+
+#home::before {
+    content: " ";
+    position: absolute;
+    background: url("travel-5219496.jpg") no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
+
+.h-primary {
+    font-size: 4rem;
+    padding: 0px;
+    height: 200px;
+}
+
+.h-primary_center {
+    display: block;
+    font-size: 4rem;
+    padding: 0px;
+    text-align: center;
+}
+
+.ourservices {
+    display: flex;
+    padding: 10px 10px;
+}
+
+#services {
+    display: flex;
+    border: 2px solid brown;
+    height: 450px;
+    padding: 15px 50px;
+    margin: 15px 35px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(248, 243, 236);
+}
+
+.box img {
+    display: block;
+    margin: auto;
+    height: 190px;
+    border-radius: 1000px;
+}
+
+.h-secondary_center {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 25px 25px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: rgb(226, 77, 77);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: rgb(192, 76, 76);
+}
+
+#services:hover {
+    animation-name: text;
+    animation-duration: 10000000s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    from {
+        margin: 10px 30px;
+        box-shadow: 10px 5px 5px rgb(241, 167, 167);
+    }
+    to {
+        background-color: white;
+    }
+}
+
+.lastsection::before {
+    content: "";
+    background: url(envelopes.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.contact {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.lastsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form div input {
+    padding: 1px;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 25px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    border-color: black;
+}
+
+.btn1 {
+    padding: 1px;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 25px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    border-color: black;
+    background-color: rgb(226, 77, 77);
+}
+
+footer {
+    display: inline;
+    background-color: black;
+}
